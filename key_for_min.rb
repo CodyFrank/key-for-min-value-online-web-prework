@@ -4,7 +4,8 @@
 def key_for_min_value(name_hash)
   last_value = 0
   lowest_key = :X
-  puts name_hash
+  if name_hash == {}
+    return nil
   name_hash.each do |key, value|
     if value < last_value || last_value == 0
       last_value = value
