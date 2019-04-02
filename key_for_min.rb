@@ -7,6 +7,6 @@ def key_for_min_value(name_hash)
     if value < last_value || last_value == 0
       last_value = value
     end
-    puts last_value
   end
+  puts last_value
 end
